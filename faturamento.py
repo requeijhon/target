@@ -127,10 +127,7 @@ dias_acima_media = [dia for dia in faturamento_diario if dia['valor'] > media]
 maior_faturamento = max(faturamento_diario, key=lambda x: x['valor'])
 menor_faturamento = min(faturamento_diario, key=lambda x: x['valor'])
 
-
-
-
-print(f'A média do faturamento mensal foi de: R${media:.2f}')    
+print(f'A média do faturamento mensal foi de: R$ {media:.2f}')    
 print(f'Maior faturamento: Dia {maior_faturamento['dia']} com R$ {maior_faturamento['valor']:.2f}')
 print(f'Menor faturamento: Dia {menor_faturamento['dia']} com R$ {menor_faturamento['valor']:.2f}')
 
